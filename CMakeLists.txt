@@ -34,7 +34,7 @@ target_link_libraries(Aaron raylib raylib_nuklear nlohmann_json::nlohmann_json)
 
 if(WIN32)
 
-    target_sources(Aaron PRIVATE Windows/app.rc)
+    target_sources(Aaron PRIVATE windows/app.rc)
     target_link_options(Aaron PRIVATE $<$<CONFIG:Release>:-mwindows>)
 elseif(APPLE)
 
